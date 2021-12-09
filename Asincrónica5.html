@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de Registro para Nuevos Socios</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<style type="text/css">
+		*{box-sizing: border-box;}
+		body{font-family: Arial, Helvetica, sans-serif;}
+		header{background-color: #CC0000  ; padding: 20px; text-align: center;font-size: 40px; color: black;}
+		nav{float: left; width: 40%; height: 150px; background:    #00FF33  ; padding: 40px;}
+		nav ul{list-style-type: none; padding:0;}
+		article{float: right;padding: 30px;width: 60%;background-color: black;height: 2000;color: white ; text-align:left;}
+		section{display: table;clear: both;content: "";}
+		p{text-align: justify;}
+		footer{background-color:  #00FF33;padding: 10px;text-align: center;color: white;}
+		table{margin: 0 auto;}
+	</style>
+<body>
+	<header>
+		<img src="img/amateur3.jpg" class="rounded-circle" alt="Cinque Terre" width="304" height="236" title="Deportes Lota Schwager">
+		<h2>Bienvenido al Club Social y Deportivo Lota Schager</h2>
+	</header>
+	<section>
+		<nav>
+			<ul>
+				<li><h5><a target="_blank" href="./Asincrónica2.html">Página del Club</a></h5></li>
+			</ul>
+		</nav>
+		<article>
+			<h4>Registrate aquí! </h4>
+	<form action="pagina02.html" method="get"><!--method post-->
+		<table border="1">
+			<tr>
+				<td>Fecha</td>
+				<td><input type="date" name="fecha"></td>
+			</tr>
+			<tr>
+				<td>Nombre</td>
+				<td><input type="text" name="nom" maxlength="20" required autofocus></td>
+			</tr>
+			<tr> 
+				<td>RUN</td>
+				<td><input type="text" name="Run"></td>
+			</tr>
+			<tr> 
+				<td>Edad</td>
+				<td><input type="number" name="num" min="18" max="100"></td>
+			</tr>
+			<tr>
+				<td>Género</td>
+				<td>
+					<select name="género">
+						<option>Masculino</option>
+						<option>Femenino</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>e-mail</td>
+				<td><input type="email" name="mail"></td>
+			</tr>
+			<tr><td>Ciudad</td>
+				<td><input type="text" name="Ciudad" maxlength="20"></td></tr>
+			<tr><td>Barrio</td>
+			<td><input type="text" name="Barrio" maxlength="20"></td></tr></tr>
+			<tr><td>Calle</td>
+			<td><input type="text" name="Calle" maxlength="20"></td></tr></tr>	
+			<tr><td>Número/Depto</td><td><input type="text" name="Número" maxlength="20"></td></tr></tr>
+			
+			
+			<tr>
+				<td>Obs.</td>
+				<td><textarea name="obj" rows="2" cols="20"></textarea></td>
+			</tr>					
+			<tr>
+				<td colspan="2"><input type="submit" name="boton" value="enviar"></td>
+			</tr>
+			
+		</table>
+		
+	</form>
+	</section>
+	</article>
+	<footer><h3>No olvides de mantenerte al día con las onerosas cuotas!</h3></footer>
+</body>
+
+</html>
